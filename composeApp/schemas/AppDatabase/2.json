@@ -1,0 +1,103 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 2,
+    "identityHash": "086af1e25929b494882be4b4935dace9",
+    "entities": [
+      {
+        "tableName": "AuthorizationEntity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `rosterId` INTEGER NOT NULL, `routeId` INTEGER NOT NULL, `routeName` TEXT NOT NULL, `sessionKey` TEXT NOT NULL, `userId` TEXT NOT NULL, `agentType` TEXT NOT NULL, `name` TEXT NOT NULL, `userName` TEXT NOT NULL, `mq` TEXT NOT NULL, `securityPass` TEXT NOT NULL, `truckId` INTEGER NOT NULL, `truckReg` TEXT NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rosterId",
+            "columnName": "rosterId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "routeId",
+            "columnName": "routeId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "routeName",
+            "columnName": "routeName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "sessionKey",
+            "columnName": "sessionKey",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userId",
+            "columnName": "userId",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "agentType",
+            "columnName": "agentType",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "userName",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mq",
+            "columnName": "mq",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "securityPass",
+            "columnName": "securityPass",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "truckId",
+            "columnName": "truckId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "truckReg",
+            "columnName": "truckReg",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '086af1e25929b494882be4b4935dace9')"
+    ]
+  }
+}

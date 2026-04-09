@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Nav X Support app</string>
+    <string name="default_permission_rationale">This permission is important for this app. Please grant the permission.</string>
+    <string name="permission_request">Permission request</string>
+    <string name="ok">OK</string>
+    <string name="please_open_the_app_to_keep_your_data_syncing_fast">Please open the app to keep your data syncing fast.</string>
+    <string name="stomp_service_starting">Stomp service starting.</string>
+    <string name="technical_message">Technical message.</string>
+</resources>
